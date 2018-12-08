@@ -1,57 +1,333 @@
-7 1 6 5 3 4 8 2
-5 3 6 2 1 4
-4 5 2 7 8 3 6 1 9
-20 9 3 13 5 19 1 18 12 11 15 7 10 14 8 4 17 6 2 16
-10 12 9 14 8 4 16 15 7 2 17 3 11 6 5 1 13 18
-4 3 1 2 5
-4 21 8 11 23 5 3 20 26 7 12 1 25 10 2 24 19 17 13 22 27 14 9 15 6 16 18
-1 4 3 2
-4 9 2 5 8 7 10 1 3 12 6 11
-10 6 8 7 14 13 9 12 1 15 16 3 11 2 5 4
-15 13 14 10 6 8 12 9 4 11 3 7 2 5 1 16
-12 11 18 10 7 14 8 4 17 20 5 1 15 13 16 3 19 6 2 9
-1
-22 1 8 10 16 13 11 18 26 20 24 19 5 14 2 17 4 23 3 15 9 25 21 12 6 7
-1 2 4 3
-24 27 2 7 19 16 26 29 14 13 6 22 10 9 1 12 17 5 18 11 28 25 15 4 21 3 8 23 20
-6 3 1 2 7 5 4
-2 1 3
-23 4 1 11 25 8 13 10 24 22 2 6 12 17 20 5 21 7 18 9 15 14 16 3 19
-3 1 2
-26 1 10 8 18 13 12 25 22 19 2 20 21 27 4 9 7 15 23 3 14 17 24 11 6 5 16
-2 3 9 7 4 5 1 8 6
-19 8 17 11 14 18 9 4 10 5 22 2 21 12 3 13 16 23 20 7 6 1 15
-11 3 19 23 9 18 15 17 28 10 22 2 7 26 14 20 8 6 1 12 16 4 24 25 21 27 5 13
-11 5 4 2 8 7 9 10 6 3 1
-21 23 8 7 2 22 11 13 5 19 12 10 16 20 9 1 18 6 4 15 14 17 3
-19 12 16 4 15 6 1 20 21 22 14 3 7 13 2 10 5 8 9 18 11 17
-1
-5 15 8 4 6 7 12 11 1 10 2 13 3 9 14
-11 4 13 7 17 1 9 8 16 10 12 2 6 3 5 14 15
-3 11 12 13 8 9 14 4 1 10 7 6 2 5
-2 6 4 1 3 8 7 5
-1 2 5 4 3 6
-7 13 15 16 18 17 22 3 12 2 5 20 21 8 9 6 11 10 1 19 14 4
-3 18 16 17 8 9 7 19 10 11 1 5 12 2 13 6 14 15 4
-14 6 5 20 15 23 11 18 7 4 2 8 19 21 10 13 16 22 17 12 9 1 3
-9 7 8 15 26 14 2 19 10 3 22 21 20 6 17 23 13 11 25 12 5 4 27 1 24 16 18
-18 13 8 15 19 10 5 2 27 11 6 16 9 21 23 12 4 25 17 14 20 3 26 22 1 24 7
-1 9 11 8 12 21 14 5 13 20 10 15 16 6 7 3 18 17 2 19 4
-2 1 3
-12 16 7 9 22 17 6 10 14 3 1 8 19 13 21 18 15 11 5 4 2 20
-7
-9 5 7 8 4 10 6 11 2 13 1 3 12
-1 3 5 2 4
-3 1 2
-20 21 7 3 5 16 8 12 11 19 13 15 18 10 2 1 6 17 4 9 14
-22 28 20 10 8 24 9 23 29 4 15 26 17 14 6 13 12 1 7 2 5 3 18 19 25 21 16 27 11
-16 17 13 2 19 5 18 4 22 15 1 6 8 7 21 20 12 10 9 14 11 23 3
-13 5 15 11 1 4 14 2 3 12 8 9 7 10 6
-19 10 20 22 5 14 25 16 2 13 7 21 24 1 6 23 11 15 4 9 26 8 17 18 12 3 27 28
-1 3 2 4 5
-5 1 3 2 4
-1 4 3 2 5
-5 2 4 1 3
-5 3 1 2 4 6 9 13 11 12 20 19 14 16 17 15 18
-0 0 0 1 0 0 0 1 0 0 0
-90 91 92 93 94 95 96 97 98 99 100
+BAAl   
+ArAb NCAa CaSA 
+ADAM DaNA   daNA  
+dAta  arEa  gAla 
+sAGa gaza ariA  
+asia aJaR Java  
+JaVA AjAx  LaMa  
+aLAN   ANal   mamA   
+rAMA   MAYA   aNna  
+NASA  pAra  aQuA   
+AquA   SARA   TAra   
+auRa  aWaY Babe   
+AbBe  BaRB  aBbY   
+baBy   bAcH  BAcK 
+CArB   cRAb sCAb 
+cUBa  BEad aBeD   
+bALD   band   dRAB  
+brad  Bard  ABle  
+bALe   bEAM  Bean  
+bEaN  BaNe  beaR   
+baRE   baSe  baTe  
+BETa   beaT BeAu 
+EBay BAnG   GRAb  
+grab  bags   blAh 
+BATH  bAiL BaLI 
+iNCA  Ciao IcAo  
+RicA  jAck LAcK 
+PacK RaCK   CAsK  
+TAck  CaLl   CaLm   
+clam ClAn CoAL 
+cLaP  CARL  CLaW 
+cLAY  COMA  CaMP 
+marc  MaRc   CrAM   
+caMS sCan scan   
+Cans   cAnt  CANT 
+COaT CoAx CARP  
+CRap   cAPS pAct  
+cArS  cARt raCy 
+CaTs CAST   Acts   
+DeAd aDDs  DEAF  
+AgeD  hEaD  iDeA  
+aIDE JadE  JADe 
+dalE DAle dEAL  
+leaD mEAD  MaDE 
+DAmE   ADEn  DAnE 
+DEaN daRe  DEAR 
+REAd   daTe   vEDa  
+DaVE   DaZE  DAFT 
+glad  gOAD  GrAd  
+DrAg haND hARd  
+sHaD   DaSH  DIaL  
+laid Dial   pAiD 
+raId ArID  Aids  
+sAID DAiS Aids 
+aUDi daNK   dARk  
+LAnD  loAD   LARd   
+ADSL lAUD   DuAL   
+dUAL  LADy  damn  
+DraM  DARn   RanD  
+SaND  dans  DAwn   
+andY  roAd   Toad   
+PaRD pads   pdAS  
+Quad dRaw  waRD   
+dRAy  YARd  uSDa  
+DaYS  EaSe   fAKe   
+fAKE fLEA leAF   
+fAMe FaNe   fEAr 
+FaRE SAfE  feaT   
+faTe  GAgE gage  
+gaLE  mEgA   gAmE   
+gApe  pagE GeaR   
+RagE SegA  saGe  
+AGEs  gATe AguE   
+gAvE  VEGA  WaGE  
+LEAH   halE   hAME 
+heaR  HeRA  RhEA  
+hEAt  haTe HAvE   
+YEAh JakE   JANe 
+JEnA JeAN  lAke  
+LeaK  mAke  Peak 
+RaKe   SaKE   kATE   
+tAKE Wake   weAK  
+MEal   Male lAne   
+NEAL   LEan   PalE  
+pEAl   ReAl  EARl  
+SEaL  sale  Late 
+tale   veal   EvaL   
+WeaL alEX aleX  
+AxlE   yale EmMa   
+meAN  NamE   amen   
+same MESa meSa   
+SEAM   mAtE   mETA   
+TEAM   MEaT  exam   
+maZe AnNE   napE   
+PANe eaRN Near 
+sEAN  NAve   VANE 
+EVaN  waNE   WEan  
+RApE   rapE  paRe   
+peaR apEs   Peas  
+ApsE paTE   TApe   
+PEat  TApe  pavE   
+Apex   REAr   Rare   
+SeAr  EArS   arEs  
+TeAr  raTE   rAVE 
+Aver  WeAR waRe  
+YeaR  eZRA   SeAS   
+EasT  tEaS seAt 
+SaVE eaSy  WavE   
+gafF flaG   FanG  
+HALF   FaIL   fAIR 
+FiAt  wAiF FALl 
+foal  fLap   FlaT  
+FLaW  Flax   fOAm   
+FArm frAN FAns  
+faWN   fARO   SOFA   
+fAQS   FasT wAFt 
+gAng  agOg   HanG   
+gASh GaIn RIgA  
+gall lANG  gOal   
+GAoL   gRAm   guAM  
+gRan   GNaT TAng  
+WAng WAnG  GnaW   
+yAng Argo  SAGo  
+togA   GOAt YogA 
+GaPS gRAS  GRAY  
+gaRy Gary tagS 
+sTag tAgs   swag 
+gAYs  hASH HaSH   
+HaIr THai  HArK 
+haWk haLL  hAlO  
+HALO  latH harm 
+MASH MATh  HANs  
+thAn   hOar   hOaX  
+AhoY   path haRT   
+saSh  HaTs   WASH 
+SHAw aSHy THaT   
+UtaH   tHAw  WHaT 
+HAZY   jAIl   MaiL   
+MAli LiMA   nAIL  
+Pali  lAiR RAiL  
+aILs  SaIL   liSa 
+lIsa TAiL  vIal  
+vAIL   MAiN   aiMs 
+Maui PAIn raIN   
+irAn   IrAn  aSin   
+ANTi  Iota iOWA   
+IpaQ  pAIr   PIsa 
+iRaq  iRaQ   RItA 
+vIsA axis   ViTA 
+Wait TAXi   taxI   
+joaN   Juan JuRA   
+jAZZ  laNk   kaRL 
+talk  walK  MArK   
+mAsk   rAnK  TanK 
+Yank  oAkS sOak   
+OKAY   paRK SArk  
+asKS  TasK   MalL  
+PALL   TaLL  wALL  
+loAm   palm   lamP   
+mARL   SLAM  MALt   
+aLUm  LoAn  PLan 
+lAwn OpAl  OrAL 
+OrAL  aLSO   LAOs 
+aLot   AltO   alTo  
+Oval  ZOLA  LAPs   
+sLAp pauL plAy  
+LARs LasT  SalT  
+SLAV LAWs wALT   
+YAWL  lAZY   oMAN 
+OMaN   MRnA   maNy 
+ROmA RoaM   SoMA   
+aMOS  mOaT AtoM   
+aToM  mapS  sPam 
+PUMA   arMS  MArs   
+MArt  TRAm   mArT  
+WarM mary ArMy 
+masS MAtS  MUSa   
+Matt   nanO rOAn   
+nAtO  Nova  avon  
+AvOn  SPAn  SNaP 
+panS   PAnt  PAWN 
+tArn   RaNT   RYan 
+RYAN YArn   sAns  
+SANs stAn vANS  
+sAWn sWAN wanT 
+yuan  naVy yAWn  
+PAsO  soAP   atop 
+ROsa   sOar   auTO   
+aUtO   avow   APps 
+spAR   Trap rAPT   
+PaRt  WRAp  WARp  
+pRay   Spas PasS   
+taPS sPat  PaST   
+sWAP   SWaP   wAsP 
+PAYS RaTs   STAR  
+ARTs  Wars   rAYS   
+tArt   wart tRay   
+vARY   aWRY  AsuS   
+Says   sTaT  VaSt  
+Vats  STaY  WAys  
+TAut   wATt  WatT 
+WAVy webB  bULB   
+bOmB   bOmb boOb   
+beck   cUBE   CUBe   
+CRib   BUCK clUB  
+biDe  bEnd BEDS  
+dEbT  bIND   BiRD  
+BIdS   Bold   blvD  
+BdSm  DUmb  BoND 
+bOdY   BEEf hebE  
+bEEN  bEER   BEET   
+GIbe   HErB  bETH 
+bIke BILE  BieR   
+BIte   BeLl   bOlE 
+LoBe   Belt   BluE 
+BONE BERN  bent 
+benZ  SErb bRET 
+BrEW   bEst   BEts  
+tUBE BYtE   Byte 
+bevy   BUff   gmBH  
+glIB   bLoG  gRUB 
+BUGs boSH   both  
+bush  bIlL   BioL 
+LIBs  iSBn BiOs   
+BRiT BiTS   JObs   
+bULk   kNob Bunk   
+boOk   buLl BOol 
+bOlt   BLoW  bOWL 
+BLuR   NUMb Boom 
+boOM   bumP  BOrn  
+snOB   bURN   sNUb  
+BOOR booT ROBS 
+Orbs   bOss bOYs  
+BOuT  BuOy  XBOX  
+pUbS  RuBy   STub  
+BuSY  BUyS   BUtT  
+bUzZ BUZZ   ChIc 
+COcK   OcLc   cEDe 
+ICEd dIce   decK   
+oEcD coDe   dICk  
+dISc   dIsC   DOck   
+DuCk cLOd  cold 
+cORd  DOCs  CuRd 
+ScUd   dUCT   creE  
+exeC  cHEf   chef 
+CHeM chen   cHEN   
+eCHO teCh   cHEW   
+LICE miCE   nIcE 
+EpIc ERIC  RICE  
+CitE   ciTe vice 
+NeCK coKe PecK   
+CEll COlE  COlE  
+CELT clew  comE  
+cOnE   oNCE   Cent   
+CneT   coPe   COPe  
+Core   CoVE   cOVE  
+sPEC   cURe crew   
+cuTE cuTe   cUFF 
+fuCK  coNf   cLOG 
+inch  ChiP ChiP   
+rIcH chit  ITCh 
+hOcK lOcH chUM 
+mUcH   chop  suCh   
+KIcK   licK   MicK   
+NiCK Pick  RICK  
+Rick   SICK  TICk   
+WIcK   iNcl   CliP 
+CLIp   mISC  cOIn   
+IcOn  Zinc  Zinc 
+PiCo RICO   PicS  
+sCsi City  joCK 
+lOck  LuCK Muck  
+COOk  ROCk   cOrk 
+sOCk  SucK  sUCk   
+TuCK  COLL Cull 
+cOol   loCO COLT  
+COWL  CTRl   cuLT   
+cuLT  LuCY  COmM  
+COmO  ComP   COmP   
+scUm  coOn   CoRn 
+cOns Unco   ntsC 
+SynC CuNt  CoOp 
+cORp  crOP  PRoc   
+CoPs  cOUp   cOPy 
+COst sCOw  CoSy   
+cUPs   CUrT  CruX   
+CruZ CuSs   CuTs 
+dIed  DudE DUdE 
+DIDo OddS TODD 
+dvdS FEEd EDge 
+MeED   nEED  EDEN   
+Deep  REDE  REed 
+deeR seed wEED 
+EYED fEnd   fRED   
+dEfT   FEuD  HidE   
+HelD sheD  dike 
+IDLe DEmi   DimE  
+pIeD Reid   RIde 
+dIes   Side   tIEd   
+EDIt TiDe  DIEt 
+divE  diVE WIDE 
+JUdE  dESk DuKE   
+dyKe DElL deLL   
+lODE dOlE  sLed   
+LeWD   WELd MoDe   
+dEmo  DomE Done   
+NoDe ReND   dENs 
+eNDS   senD DENt   
+tEnd nuDe  dUNe  
+nUde wEND  dEny 
+doPE   doEr   doSe 
+does   DOtE dozE   
+dept   DUpE  DreW  
+uSED  DUet   DifF  
+Doff   finD   fIdO  
+FOlD  FUnd   fOod 
+Ford  GILD dinG   
+GRId   Gird digS  
+gOlD duNg goOd   
+DoGS  GoDs   dOuG   
+douG dRug  DiSH   
+HolD   HOOd tHUD   
+hDTV   MiDi   KinD   
+dIrk Kids  dIsk   
+KIDS   mild IdOl 
+WiLd minD  PmId 
+odin rINd   dint 
+winD   ipod   VoID  
+SaBEr   saBrE   brAvE   
+ZeBra BASes  bEatS  
+BOATs  abOut  bAyoU 
+BARRY  
+#
