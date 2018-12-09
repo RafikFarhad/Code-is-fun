@@ -61,8 +61,8 @@ int DFS(int f)
 int main()
 {
 #ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt", "w", stdout);
+    freopen("000.txt","r",stdin);
+    //freopen("output.txt", "w", stdout);
 #endif
     ///                                    MAIN
     int i, j, n, m, a, b, t;
@@ -80,7 +80,7 @@ int main()
             v[a].pb(b);
             v[b].pb(a);
         }
-        m = 0;
+        m = 1;
         for(i=1; i<=n; i++)
         {
             if(flag[i]==0)

@@ -16,7 +16,7 @@
 /** Author     : Rafik Farhad              */
 /** Mail to     : rafikfarhad@gmail.com   */
 /*****************************************/
-#define CLR(o)                                  memset(o, 0x00, sizeof o)
+#define CLR(o)                                  memset(o, 0, sizeof o)
 #define CLR1(o)                                 memset(o, -1, sizeof o)
 #define takei(a)                                 scanf("%d", &a)
 #define takell(a)                                scanf("%I64d", &a)
@@ -66,17 +66,18 @@ const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1};
 const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2};
 const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1};   // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
 #define SIZE INT_MAX
-bool flag[25], n, k,m;
+bool flag[25];
+int n, k,m;
 
 int main()
 {
 #ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
+    // freopen("000.txt","r",stdin);
    // freopen("output.txt", "w", stdout);
 #endif
     ///                                    MAIN
     int i, j, l, a, p, b, c, d;
-    while(sf("%d %d %d", &n, &k, &m)==3 and n)
+    while(sf("%d %d %d", &n, &k, &m)==3 && n && m && k)
     {
         a = n+1;
         b = 0;
@@ -112,12 +113,11 @@ int main()
             if(c!=d) pf("%3d%3d", c, d);
             else pf("%3d", c);
             flag[c] = flag[d] = 0;
-            a = c;
-            b = d;
+            a = c+1;
+            b = d-1;
         }
-        NL;
+        pf("\n");
     }
-
 
     /* Coding is FUN  */
     ///                                    ENDD
