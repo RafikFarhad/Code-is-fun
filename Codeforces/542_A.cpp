@@ -1,20 +1,26 @@
-#include <cstdio>
-#include <iostream>
-#include <string>
-#include <cstring>
-#include <math.h>
-#include <ctime>
-#include <cstdlib>
-#include <algorithm>
-#include <new>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
+
+/*Return of Ghost*/
+
+
+//#include <iostream>
+ #include <cstdio>
+ #include <iostream>
+ #include <string>
+ #include <cstring>
+ #include <math.h>
+ #include <ctime>
+ #include <cstdlib>
+ #include <algorithm>
+ #include <new>
+ #include <vector>
+ #include <stack>
+ #include <queue>
+ #include <map>
+ #include <set>
 /******************************************/
 /** Author      : Rafik Farhad            */
 /** Mail to     : rafikfarhad@gmail.com   */
+/** Created     :  2017-03-10-22.27  */
 /******************************************/
 #define CLR(o)                                  memset(o, 0x00, sizeof o)
 #define CLR1(o)                                 memset(o, -1, sizeof o)
@@ -31,6 +37,7 @@
 #define PI                                      2*acos(0)
 #define all(o)                                  o.begin(), o.end()
 #define csi                                     pf("Case %d: ", ++keis)
+#define csii                                     pf("Case %d:\n", ++keis)
 #define _(o)                                    pf("%d\n", o)
 #define ll                                      long long
 #define ull                                     unsigned long long
@@ -47,43 +54,56 @@ template <class T1, class T2> void deb(T1 p, T2 q) { cout << "Debugging: " << p 
 template <class T1, class T2, class T3> void deb(T1 p, T2 q, T3 r) { cout << "Debugging: " << p << "\t " << q << "\t " << r << endl;}
 template <class T1, class T2, class T3, class T4> void deb(T1 p, T2 q, T3 r, T4 s) { cout << "Debugging: " << p << "\t " << q << "\t " << r << "\t " << s << endl;}
 long long int POOW(long long b, long long p) { if(p==0) return 1; return b*POOW(b, p-1);}
+//int SET(int mask, int pos){return mask  singlebar  (1<<pos);}
+//bool CHK(int mask, int pos){return (1&(mask>>pos));}
 const int xx[] = {0, 0, 1, -1, -1, 1, -1, 1};const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1}; const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2}; const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1};   // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
-#define MX INT_MAX
-#define MOD 1000000007
-#define MY INT_MIN
-
+#define LT (1<<31)-1
+#define MX
+#define MOD
+//#define MY INT_MIN
+//ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {ll res=1ll;while(power){if(power&1)res=(res*base)%MOD;base=(base*base)%MOD;power>>=1;}return res%MOD;}
 
 int main()
 {
-    //ios::sync_with_stdio(false);
+    //ios_base::sync_with_stdio(false);
 #ifndef ONLINE_JUDGE
+    //freopen("/home/rafikfarhad/Desktop/000.txt","r",stdin);
     //freopen("000.txt","r",stdin);
     //freopen("output.txt", "w", stdout);
     //clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int i, t, j, k, l,  keis=0, a, b, c, d, x, y;
+    int i, t, j, k, l,  keis(0), c, d, x, y, a, b,n;
 
-    string aa, bb;
-    map <string, int> mp;
-    takei(t);
-    while(t--)
+    int ar[2500];
+    while(takei(n) != EOF)
     {
-        mp.clear();
-        k = 0;
-        takei(i);
-        while(i--)
+        a = n;
+        i = 0;
+        b = 0, c=0;
+        while(a--)
         {
-            cin >> aa;
-            mp[aa]++;
-            if(mp[aa]>k)
-            {
-                k = mp[aa];
-                bb = aa;
-            }
+            takei(ar[i++]);
+            if(ar[i-1]>0) b++;
+            if(ar[i-1]<0) c++;
+
+//            deb(i, a, ar[i]);
         }
-        csi;
-        cout << bb << endl;
+        sort(ar, ar+n);
+//        deb(ar[n/2-1], ar[n/2], ar[n/2+1]);
+
+        if(b+b>=n)
+        {
+            _(1);
+        }
+        else if(c+c>=n)
+        {
+            _(-1);
+        }
+        else
+        {
+            _(0);
+        }
     }
     /* Coding is FUN  */
     ///                                    ENDD
@@ -93,6 +113,4 @@ int main()
 #endif
     return 0;
 }
-
-
 
