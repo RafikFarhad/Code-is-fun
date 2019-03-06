@@ -1,11 +1,11 @@
 /*=============================================================================
 #  Author:          RafikFarhad - https://github.com/RafikFarhad/Code_is_fun
 #  Email:           rafikfarhad@gmail.com
-#  FileName:        test.cpp
-#  Type:            brute force
+#  FileName:        541 A.cpp
+#  Type:            easy
 #  Description:     
 #  Version:         0.0.1
-#  Created On:      00:58, 07-03-2019
+#  Created On:      01:10, 07-03-2019
 =============================================================================*/
 /*Return of Ghost*/
 #include <cstdio>
@@ -89,13 +89,17 @@ int main()
     int i, t, j, k, l, keis(0), c, d, x, y, a, b;
     //    char inp[100];
     //    fgets(inp, 100, stdin);
-    
-
+    ll h1, h2, w1, w2, sum;
+    while (sf("%lld %lld %lld %lld", &w1, &h1, &w2, &h2) != EOF)
+    {
+        sum = (h1+h2)*2 + (max(w1,w2)*2) + 4;
+        __(sum);
+    }
     /* Coding is FUN  */
     ///                                    ENDD
 #ifndef ONLINE_JUDGE
     //pf("-------ENDS OF OUTPUT------\n\n");
-    //pf("Time Elapsed: %lu\n", (clock()-ooo));
+    //pf("Time Elapsed: %lu\n", (clock()-ooo));1 4 3 3
 #endif
     return 0;
 }

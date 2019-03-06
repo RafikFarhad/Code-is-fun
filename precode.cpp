@@ -1,12 +1,3 @@
-/*=============================================================================
-#  Author:          RafikFarhad - https://github.com/RafikFarhad/Code_is_fun
-#  Email:           rafikfarhad@gmail.com
-#  FileName:        test.cpp
-#  Type:            brute force
-#  Description:     
-#  Version:         0.0.1
-#  Created On:      00:58, 07-03-2019
-=============================================================================*/
 /*Return of Ghost*/
 #include <cstdio>
 #include <iostream>
@@ -89,7 +80,7 @@ int main()
     int i, t, j, k, l, keis(0), c, d, x, y, a, b;
     //    char inp[100];
     //    fgets(inp, 100, stdin);
-    
+    deb(6 ^ 9, "HELO", "ABC");
 
     /* Coding is FUN  */
     ///                                    ENDD
