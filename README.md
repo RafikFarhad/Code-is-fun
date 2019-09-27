@@ -13,6 +13,6 @@
 ------------------------------------------------------------------------
 
 
-    Code never lies, comments sometime do
-                                                      - anonymous 
+    Code never lies, comments sometimes do 
+                                – Ron Jeffries
                             
