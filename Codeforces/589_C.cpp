@@ -45,8 +45,9 @@ long int PowerUp(long long b, long long p) {
     return b * PowerUp(b, p - 1);
 }
 
-//int SET(int mask, int pos) { return mask | (1 << pos); }
-//bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
+ll SET(ll mask, int pos) { return mask | (1ll << pos); }
+
+bool CHK(ll mask, int pos) { return (1ll & (mask >> pos)); }
 
 const int xx[] = {0, 0, 1, -1, -1, 1, -1, 1};
 const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1};
@@ -54,9 +55,39 @@ const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2};
 const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1}; // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
 
 #define LT (1 << 31) - 1
-#define MX
-#define MOD
-//ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {ll res=1ll;while(power){if(power&1)res=(res*base)%MOD;base=(base*base)%MOD;power>>=1;}return res%MOD;}
+#define MX 1e9
+#define MOD (ll)(1e9+7)
+
+ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {
+    ll res = 1ll;
+    while (power) {
+        if (power & 1)res = (res * base) % MOD;
+        base = (base * base) % MOD;
+        power >>= 1;
+    }
+    return res % MOD;
+}
+
+ll prime[(int) (MX / 64)];
+int check[100005];
+int noOfPrime = 0;
+
+void Seieve() {
+    CLR(check);
+    int sqroot = (int) sqrt(MX);
+    for (int i = 3; i < sqroot; i += 2) {
+//        prime[i/63] = SET(prime[i/63], i%63);
+        for (int j = i * 2; j < sqroot; j += i) {
+            prime[j / 63] = SET(prime[j / 63], j % 63);
+        }
+    }
+    check[noOfPrime++] = 2;
+    for (int i = 3; i < sqroot; i += 2) {
+        if (!CHK(prime[i / 63], i % 63)) {
+            check[noOfPrime++] = i;
+        }
+    }
+}
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -66,8 +97,35 @@ int main() {
     clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
-
+    ll a, b, n, c, d, i, j, k, keis(0), l, t, x, y, z;
+    Seieve();
+    while (cin >> x >> n) {
+        ll ans = 1ll;
+        for (i = 0; i < noOfPrime; i++) {
+            if (x % check[i] == 0) {
+                b = n;
+                while (b / check[i]) {
+                    ans = (ans * FAST_EXP(check[i], b / check[i])) % MOD;
+                    b /= check[i];
+                }
+            }
+            while (x % check[i] == 0) {
+                x /= check[i];
+            }
+//            while (n % check[i] == 0) {
+//                n /= check[i];
+//            }
+        }
+        b = n;
+        while (b / x and x > 1) {
+            ans = (ans * FAST_EXP(x, b / x)) % MOD;
+            b /= x;
+        }
+//        if (n > 1) {
+//            ans = (ans * FAST_EXP(n, 1ll)) % MOD;
+//        }
+        __(ans);
+    }
 
     /* Coding is FUN  */
     ///                                    ENDD

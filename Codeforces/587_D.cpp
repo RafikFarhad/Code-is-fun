@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 
-using namespace std;
 #define CLR(o) memset(o, 0x00, sizeof o)
 #define CLR1(o) memset(o, -1, sizeof o)
 #define take(var) cin >> var
@@ -13,18 +12,20 @@ using namespace std;
 #define ppp system("pause")
 #define ok cout << "OKA" << endl;
 #define pf printf
-#define NL printf("\n")
+#define NL cout << endl;
 #define PI 2 * acos(0)
 #define all(o) o.begin(), o.end()
 #define csi pf("Case %d: ", ++keis)
 #define csii pf("Case %d:\n", ++keis)
 #define _(o) pf("%d\n", o)
+#define ll long long
+#define ull unsigned long long
 #define exx 2.7182818284590452353602875
 #define xx first
 #define yy second
-typedef long long ll;
-typedef unsigned long long ull;
+
 ///Helper
+using namespace std;
 
 template<class T1>
 void __(T1 p) { cout << p << endl; }
@@ -45,14 +46,14 @@ long int PowerUp(long long b, long long p) {
     return b * PowerUp(b, p - 1);
 }
 
-//int SET(int mask, int pos) { return mask | (1 << pos); }
-//bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
+int SET(int mask, int pos) { return mask | (1 << pos); }
+
+bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
 
 const int xx[] = {0, 0, 1, -1, -1, 1, -1, 1};
 const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1};
 const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2};
 const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1}; // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
-
 #define LT (1 << 31) - 1
 #define MX
 #define MOD
@@ -66,8 +67,31 @@ int main() {
     clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
+    int i, j, k, keis(0), l, t, x, y, z;
+    ll ar[200005], br[200005];
+    ll sum, a, b, gcd;
+    int n;
+    while (cin >> n) {
+        a = -1;
+        for (i = 0; i < n; ++i) {
+            take(ar[i]);
+            a = max(a, ar[i]);
+        }
+        l = 0;
+        sum = 0;
+        for (i = 0; i < n; ++i) {
+            if (a - ar[i]) {
+                br[l++] = a - ar[i];
+                sum += br[l-1];
+            }
+        }
+        gcd = br[0];
+        for (i = 1;  i<l ; i++) {
+            gcd = __gcd(gcd, br[i]);
+        }
+        deb(sum/gcd, gcd);
 
+    }
 
     /* Coding is FUN  */
     ///                                    ENDD

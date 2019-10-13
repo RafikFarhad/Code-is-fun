@@ -45,8 +45,9 @@ long int PowerUp(long long b, long long p) {
     return b * PowerUp(b, p - 1);
 }
 
-//int SET(int mask, int pos) { return mask | (1 << pos); }
-//bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
+ll SET(ll mask, int pos) { return mask | (1ll << pos); }
+
+bool CHK(ll mask, int pos) { return (1ll & (mask >> pos)); }
 
 const int xx[] = {0, 0, 1, -1, -1, 1, -1, 1};
 const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1};
@@ -54,9 +55,48 @@ const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2};
 const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1}; // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
 
 #define LT (1 << 31) - 1
-#define MX
-#define MOD
-//ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {ll res=1ll;while(power){if(power&1)res=(res*base)%MOD;base=(base*base)%MOD;power>>=1;}return res%MOD;}
+#define MX 1e9
+#define MOD (ll)(1e9+7)
+
+ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {
+    ll res = 1ll;
+    while (power) {
+        if (power & 1)res = (res * base) % MOD;
+        base = (base * base) % MOD;
+        power >>= 1;
+    }
+    return res % MOD;
+}
+
+ll prime[(int) (MX / 64)];
+int check[100005];
+int noOfPrime = 0;
+
+void Seieve() {
+    CLR(check);
+    int sqroot = (int) sqrt(MX);
+    for (int i = 3; i < sqroot; i += 2) {
+//        prime[i/63] = SET(prime[i/63], i%63);
+        for (int j = i * 2; j < sqroot; j += i) {
+            prime[j / 63] = SET(prime[j / 63], j % 63);
+        }
+    }
+    check[noOfPrime++] = 2;
+    for (int i = 3; i < sqroot; i += 2) {
+        if (!CHK(prime[i / 63], i % 63)) {
+            check[noOfPrime++] = i;
+        }
+    }
+}
+
+bool PrimeCheck(ll a) {
+    for (int i = 0; i < noOfPrime; i++) {
+        if (a % check[i] == 0) {
+            return true;
+        }
+    }
+    return false;
+}
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -66,8 +106,18 @@ int main() {
     clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
-
+    ll a, b, n, c, d, i, j, k, keis(0), l, t, x, y, z;
+    Seieve();
+    take(a);
+    while (a--) {
+        cin >> x >> y;
+        if (x - y == 1) {
+            deb("NO");
+            continue;
+        }
+            deb("YES");
+//        deb(check[noOfPrime-1]);
+    }
 
     /* Coding is FUN  */
     ///                                    ENDD

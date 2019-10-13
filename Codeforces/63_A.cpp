@@ -67,7 +67,18 @@ int main() {
 #endif
     ///                                    MAIN
     int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
-
+    while(take(a)) {
+        b = c= d= 0;
+        while(a--) {
+            take(i);
+            b+=i;
+            take(i);
+            c+=i;
+            take(i);
+            d+=i;
+        }
+        deb(b==0 and c==0 and d==0 ?"YES":"NO");
+    }
 
     /* Coding is FUN  */
     ///                                    ENDD

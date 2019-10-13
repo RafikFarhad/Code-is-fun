@@ -58,6 +58,19 @@ const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1}; // KX-> Knight moves xx-> diagona
 #define MOD
 //ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {ll res=1ll;while(power){if(power&1)res=(res*base)%MOD;base=(base*base)%MOD;power>>=1;}return res%MOD;}
 
+bool Check(int x) {
+    int p[10];
+    CLR(p);
+    while (x) {
+        p[x % 10]++;
+        if (p[x % 10] == 2) {
+            return false;
+        }
+        x/=10;
+    }
+    return true;
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
 #ifdef RAFIK_FARHAD
@@ -67,6 +80,19 @@ int main() {
 #endif
     ///                                    MAIN
     int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
+
+    while (cin >> a >> b) {
+        c = 0;
+        for (int i = a; i <= b and !c; ++i) {
+            if (Check(i)) {
+                __(i);
+                c = 1;
+            }
+        }
+        if (!c) {
+            __(-1);
+        }
+    }
 
 
     /* Coding is FUN  */

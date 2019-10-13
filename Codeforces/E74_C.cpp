@@ -45,8 +45,9 @@ long int PowerUp(long long b, long long p) {
     return b * PowerUp(b, p - 1);
 }
 
-//int SET(int mask, int pos) { return mask | (1 << pos); }
-//bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
+ll SET(ll mask, int pos) { return mask | (1ll << pos); }
+
+bool CHK(ll mask, int pos) { return (1ll & (mask >> pos)); }
 
 const int xx[] = {0, 0, 1, -1, -1, 1, -1, 1};
 const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1};
@@ -54,9 +55,36 @@ const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2};
 const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1}; // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
 
 #define LT (1 << 31) - 1
-#define MX
-#define MOD
-//ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {ll res=1ll;while(power){if(power&1)res=(res*base)%MOD;base=(base*base)%MOD;power>>=1;}return res%MOD;}
+#define MX 1e9
+#define MOD (ll)(1e9+7)
+
+ll FAST_EXP(ll base, ll power) /*base^power%MOD*/   {
+    ll res = 1ll;
+    while (power) {
+        if (power & 1)res = (res * base) % MOD;
+        base = (base * base) % MOD;
+        power >>= 1;
+    }
+    return res % MOD;
+}
+
+int mem[200005], p[200005], h, n, on;
+
+int Start(int now) {
+    if (now == n) {
+        return 0;
+    }
+    if (on - p[now] >= 2){
+        on -= 2;
+        return 1 + Start(now);
+    }
+    if (on - p[now] == 1){
+        on -= 2;
+        return 1 + Start(now);
+    }
+        return 5;
+}
+
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -66,9 +94,18 @@ int main() {
     clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
-
-
+    ll a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
+    take(keis);
+    while (keis--) {
+        take(h);
+        take(n);
+        for (int i = 0; i < n; ++i) {
+            take(p[i]);
+            mem[i] = INT_MAX;
+        }
+        on = h;
+        deb(Start(0));
+    }
     /* Coding is FUN  */
     ///                                    ENDD
 #ifdef RAFIK_FARHAD

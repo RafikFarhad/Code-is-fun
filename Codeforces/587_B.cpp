@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 
-using namespace std;
 #define CLR(o) memset(o, 0x00, sizeof o)
 #define CLR1(o) memset(o, -1, sizeof o)
 #define take(var) cin >> var
@@ -13,18 +12,20 @@ using namespace std;
 #define ppp system("pause")
 #define ok cout << "OKA" << endl;
 #define pf printf
-#define NL printf("\n")
+#define NL cout << endl;
 #define PI 2 * acos(0)
 #define all(o) o.begin(), o.end()
 #define csi pf("Case %d: ", ++keis)
 #define csii pf("Case %d:\n", ++keis)
 #define _(o) pf("%d\n", o)
+#define ll long long
+#define ull unsigned long long
 #define exx 2.7182818284590452353602875
 #define xx first
 #define yy second
-typedef long long ll;
-typedef unsigned long long ull;
+
 ///Helper
+using namespace std;
 
 template<class T1>
 void __(T1 p) { cout << p << endl; }
@@ -45,14 +46,14 @@ long int PowerUp(long long b, long long p) {
     return b * PowerUp(b, p - 1);
 }
 
-//int SET(int mask, int pos) { return mask | (1 << pos); }
-//bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
+int SET(int mask, int pos) { return mask | (1 << pos); }
+
+bool CHK(int mask, int pos) { return (1 & (mask >> pos)); }
 
 const int xx[] = {0, 0, 1, -1, -1, 1, -1, 1};
 const int yy[] = {1, -1, 0, 0, 1, 1, -1, -1};
 const int kx[] = {-2, -1, 1, 2, 2, 1, -1, -2};
 const int ky[] = {1, 2, 2, 1, -1, -2, -2, -1}; // KX-> Knight moves xx-> diagonal -> 8 horizontal/vertical->4
-
 #define LT (1 << 31) - 1
 #define MX
 #define MOD
@@ -66,8 +67,26 @@ int main() {
     clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
-
+    int i, j, k, keis(0), l, t, x, y, z;
+    pair<int, int> a[10005];
+    ll sum;
+    int n;
+    while (cin >> n) {
+        for (i = 0; i < n; ++i) {
+            take(l);
+            a[i] = {-l, i};
+        }
+        sort(a, a + n);
+        sum = 0l;
+        for (i = 0; i < n; i++) {
+            sum += ((-a[i].xx*i)+1);
+        }
+        __(sum);
+        for (int i = 0; i < n; ++i) {
+            cout << a[i].yy+1 << " ";
+        }
+        NL;
+    }
 
     /* Coding is FUN  */
     ///                                    ENDD

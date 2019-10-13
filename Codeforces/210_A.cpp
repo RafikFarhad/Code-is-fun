@@ -66,7 +66,16 @@ int main() {
     clock_t ooo = clock();
 #endif
     ///                                    MAIN
-    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z;
+    int a, b, c, d, i, j, k, keis(0), l, t, x, y, z, n;
+
+    while(take(n)) {
+        take(k);
+        for(i=0; i<n; i++) {
+            for(j=0; j<n; j++) {
+                deb(i==j?k:0);
+            }
+        }
+    }
 
 
     /* Coding is FUN  */
